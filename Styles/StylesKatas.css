@@ -55,3 +55,148 @@ main ul li:first-of-type {
 img:last-of-type {
 	margin-bottom: 2%;
 }
+
+/* --- MEDIA QUERIES --- */
+
+/* Solo aplicar este diseño en pantallas grandes */
+@media (min-width: 992px) {
+  .DirMap {
+    grid-template-columns: 1fr auto; /* mantiene el diseño a dos columnas */
+  }
+}
+
+/* para portátiles  */
+/* @media (min-width: 1281px) and (max-width: 1440px) {} */
+
+/* Para tables */
+@media screen and (max-width: 768px) {
+    .hamburger {
+		display: block;
+	}
+
+    /* Ocultamos el menú-container por defecto */
+    .menu-container {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: white;
+        position: relative;
+        left: 0;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    /* Cuando se activa la hamburguesa */
+    #menu-toggle:checked + .hamburger + .menu-container {
+        display: flex;
+    }
+
+    /* Logo dentro del menú */
+    .menu-container .logo {
+        display: flex;
+        justify-content: center;
+        padding: 15px 0;
+    }
+    .menu-container .logo img {
+		width: 80px;
+		height: 80px;
+	}
+
+    /* Menú vertical */
+    .menu {
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+    }
+	
+    .menu li {
+		text-align: center;
+		padding: 10px 0;
+	}
+	
+    .menu li a {
+		font-size: 18px;
+	}
+
+    .DirMap {
+        grid-template-columns: 1fr; /* pasa a una sola columna */
+        justify-items: center;      /* centra mapa y lista horizontalmente */
+        text-align: center;
+    }
+
+    .DirMap iframe {
+        max-width: 90%;
+        height: 250px;
+        margin: 20px 0 10px 0;
+    }
+
+    .DirMap ul {
+        margin: 0;
+        text-align: center;
+    }
+
+    .DirMap ul li {
+        display: block;             /* uno debajo del otro */
+        font-size: 18px;            /* un poco más pequeño */
+        margin-bottom: 8px;
+    }
+
+    .copy {
+        font-size: 20px;
+    }
+}
+
+/* Para móviles */
+@media screen and (max-width: 480px) {
+    .menu-container .logo img {
+		width: 60px;
+		height: 60px;
+	}
+
+    nav {
+        position: sticky;
+        top: 0;
+    }
+
+    .menu-container {
+        position: relative;
+    }
+
+    .DirMap {
+        grid-template-columns: 1fr;    /* todo en una sola columna */
+        justify-items: center;         /* centra mapa y lista */
+        text-align: center;
+    }
+
+    .DirMap iframe {
+        width: 90%;
+        height: 200px;
+        display: block;
+        margin: 0 auto;           /* centra horizontalmente el iframe */
+        border-radius: 8px;
+        position: relative;       /* asegúrate de que no se desplace por márgenes heredados */
+        left: 40%;
+        transform: translateX(-46%); /* centra con precisión */
+    }
+
+    .DirMap ul {
+        margin: 0;
+        justify-self: center; /* centra la lista en el grid */
+        text-align: center;   /* centra el texto */
+    }
+
+    .DirMap ul li {
+        display: block;
+        font-size: 16px;
+        text-align: center;    /* asegura que el texto de cada li se centre */
+        margin: 4px 0;
+    }
+
+    .copy {
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    .ContenedorFooter {
+        padding: 2%;
+    }
+}
