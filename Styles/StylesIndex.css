@@ -2,24 +2,23 @@ header ul li:nth-of-type(1) {
 	text-decoration: overline;
 }
 
-/* .FondoNegro {
+.FondoNegro {
 	margin: auto;
 	width: 100%;
 	background-color: black;
 }
 
-.FondoNegro img {
+/*.FondoNegro img {
 	margin: auto;
 	width: 50%;
 	display: flex;
-	/* margin-bottom: 2%; */
-}
+} */
 
 .FondoNegro p {
 	text-align: center;
 	color: #fffefe;
 	font-size: 18px;
-} */
+}
 
 .FormatoParrafo {
 	margin: auto;
@@ -28,3 +27,20 @@ header ul li:nth-of-type(1) {
 	text-align: justify;
 	margin-top: 2%;
 }
+
+h1 {
+	margin-left: 5%;
+	margin-top: 2%;
+}
+
+.FormatoParrafo1 {
+	margin: auto;
+	width: 90%;
+	font-size: 18px;
+	text-align: justify;
+	margin-top: 0%;
+}
+
+/* .FormatoParrafo :nth-child(2) {
+	margin-top: 0%;
+} */

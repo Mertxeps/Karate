@@ -15,7 +15,6 @@ body {
 .BarrasNavegacion {
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
 	margin: auto;
 	width: 100%;
     padding: 10px 5%;
@@ -32,6 +31,8 @@ body {
 .logo img {
     width: 50px;
     height: 50px;
+    /* margin-left: 0%;
+    padding-left: 0%; */
 }
 
 .menu {
@@ -100,28 +101,27 @@ body {
 	color: white;
 }
 
-Footer div .DirMap {
+.DirMap {
   display: grid;
   grid-template-columns: 1fr auto;  /* primera columna: mapa flexible, segunda: lista ajustada */
   align-items: center;              /* alinea verticalmente mapa y lista */
   gap: 10px;                        /* espacio entre el mapa y la lista */
 }
 
-Footer iframe {
-  max-width: 400px;          /* ajusta el tamaño del mapa */
-  height: 300px;             /* altura más manejable */
+.DirMap iframe {
+  max-width: 400px;
+  height: 300px;
+  margin-left: 20%;
+  margin-top: 2%;
 }
 
-Footer ul {
-  list-style: none;          /* quita los puntos de la lista */
+.DirMap ul li {
+  list-style: none;
   padding: 0;
   margin: 0;
-  text-align: left;          /* mantiene el texto alineado a la izquierda */
+  text-align: left;
   color: white;
-}
-
-ul li {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 /* --- MEDIA QUERIES --- */
