@@ -14,14 +14,6 @@ h1 {
 	margin-bottom: 0;
 }
 
-.FormatoParrafo {
-	margin: auto;
-	width: 90%;
-	font-size: 18px;
-	text-align: justify;
-	margin-top: 2%;
-}
-
 main img {
 	display: flex;
 	justify-items: center;
@@ -34,6 +26,7 @@ main ul li {
 	margin-left: 9%;
 	padding-bottom: 1%;
 	font-size: 18px;
+    /* list-style-image: url(../Icons/Checks/Comprobar.png); */
 }
 
 .FormatoParrafo1 {
