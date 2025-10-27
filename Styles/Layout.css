@@ -101,30 +101,48 @@ body {
 	color: white;
 }
 
+/* Diseño en grid del mapa y la lista */
 .DirMap {
   display: grid;
-  grid-template-columns: 1fr auto;  /* primera columna: mapa flexible, segunda: lista ajustada */
-  align-items: center;              /* alinea verticalmente mapa y lista */
-  gap: 10px;                        /* espacio entre el mapa y la lista */
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  /* gap: 0px; */
 }
 
+/* Estilo del mapa */
 .DirMap iframe {
   max-width: 400px;
   height: 300px;
-  margin-left: 20%;
+  margin-left: 43%;
   margin-top: 2%;
+  border-radius: 8px;
+}
+
+/* Estilo de la lista */
+.DirMap ul {
+  justify-self: end;
+  text-align: left;
+  margin-right: 125%;
 }
 
 .DirMap ul li {
   list-style: none;
-  padding: 0;
-  margin: 0;
-  text-align: left;
   color: white;
   font-size: 20px;
+  margin-bottom: 5px;
+  display: inline-block; /* evita que ocupen todo el ancho */
+  white-space: nowrap;   /* evita que se dividan en dos líneas */
+  width: auto;           /* ajusta el ancho al contenido */
 }
 
 /* --- MEDIA QUERIES --- */
+
+/* Solo aplicar este diseño en pantallas grandes */
+@media (min-width: 992px) {
+  .DirMap {
+    grid-template-columns: 1fr auto; /* mantiene el diseño a dos columnas */
+  }
+}
 
 /* para portátiles  */
 /* @media (min-width: 1281px) and (max-width: 1440px) {} */
@@ -177,6 +195,33 @@ body {
     .menu li a {
 		font-size: 18px;
 	}
+
+    .DirMap {
+        grid-template-columns: 1fr; /* pasa a una sola columna */
+        justify-items: center;      /* centra mapa y lista horizontalmente */
+        text-align: center;
+    }
+
+    .DirMap iframe {
+        max-width: 90%;
+        height: 250px;
+        margin: 20px 0 10px 0;
+    }
+
+    .DirMap ul {
+        margin: 0;
+        text-align: center;
+    }
+
+    .DirMap ul li {
+        display: block;             /* uno debajo del otro */
+        font-size: 18px;            /* un poco más pequeño */
+        margin-bottom: 8px;
+    }
+
+    .copy {
+        font-size: 20px;
+    }
 }
 
 /* Para móviles */
@@ -193,5 +238,44 @@ body {
 
     .menu-container {
         position: relative;
+    }
+
+    .DirMap {
+        grid-template-columns: 1fr;    /* todo en una sola columna */
+        justify-items: center;         /* centra mapa y lista */
+        text-align: center;
+    }
+
+    .DirMap iframe {
+        width: 90%;
+        height: 200px;
+        display: block;
+        margin: 0 auto;           /* centra horizontalmente el iframe */
+        border-radius: 8px;
+        position: relative;       /* asegúrate de que no se desplace por márgenes heredados */
+        left: 40%;
+        transform: translateX(-46%); /* centra con precisión */
+    }
+
+    .DirMap ul {
+        margin: 0;
+        justify-self: center; /* centra la lista en el grid */
+        text-align: center;   /* centra el texto */
+    }
+
+    .DirMap ul li {
+        display: block;
+        font-size: 16px;
+        text-align: center;    /* asegura que el texto de cada li se centre */
+        margin: 4px 0;
+    }
+
+    .copy {
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    .ContenedorFooter {
+        padding: 2%;
     }
 }
