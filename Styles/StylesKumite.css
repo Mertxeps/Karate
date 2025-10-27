@@ -6,3 +6,37 @@ img {
 	margin: auto;
 	width: 50%;
 }
+
+.FormatoParrafo {
+	margin: auto;
+	width: 90%;
+	font-size: 18px;
+	text-align: justify;
+	margin-top: 2%;
+}
+
+h1 {
+	margin-left: 5%;
+	margin-top: 2%;
+}
+
+main ul li {
+	margin-left: 10%;
+	padding-bottom: 1%;
+}
+
+main ul li:first-of-type {
+	padding-top: 1%;
+}
+
+main ul li ul li:first-of-type {
+	padding-top: 1%;
+}
+
+.FormatoParrafo1 {
+	margin: auto;
+	width: 90%;
+	font-size: 18px;
+	text-align: justify;
+	margin-top: 0%;
+}

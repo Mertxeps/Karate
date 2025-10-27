@@ -51,3 +51,7 @@ h1:last-of-type {
 main ul li:first-of-type {
 	margin-top: 2%;
 }
+
+img:last-of-type {
+	margin-bottom: 2%;
+}
