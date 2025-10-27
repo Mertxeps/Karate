@@ -1,0 +1,9 @@
+
+header ul li:nth-of-type(3) {
+	text-decoration: overline;
+}
+
+img {
+	margin: auto;
+	width: 50%;
+}
