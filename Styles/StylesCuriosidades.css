@@ -2,3 +2,22 @@ header ul li:nth-of-type(5) {
 	text-decoration: overline;
 }
 
+h1 {
+	margin-top: 2%;
+	margin-left: 5%
+}
+
+.ImagenesCuriosidades {
+	display: flex;
+	justify-content: center;
+	justify-items: center;
+	flex-wrap: wrap;
+	gap: 5%;
+	margin: auto;
+	width: 100%;
+	margin-top: 2%;
+}
+
+.FormatoParrafo:last-of-type {
+	margin-bottom: 2%;
+}
