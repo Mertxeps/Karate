@@ -19,6 +19,7 @@ h1 {
 }
 
 main ul li {
+	font-size: 18px;
 	margin-left: 10%;
 	padding-bottom: 1%;
 	list-style-image: url(../Icons/web/Ropa\ de\ karate\ color\ -\ 32.png);
