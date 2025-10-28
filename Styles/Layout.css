@@ -60,22 +60,49 @@ body {
 }
 
 .FondoNegro {
-	margin: auto;
-	width: 100%;
-	background-color: black;
+  position: relative; /* para posicionar el texto dentro */
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  overflow: hidden; /* por si la animación sale del borde */
 }
 
 .FondoNegro img {
-	margin: auto;
-	width: 50%;
-	display: flex;
-	/* margin-bottom: 2%; */
+  width: 50%;
+  margin: auto;
+  display: block; /* usa block para centrar correctamente */
 }
 
-.FondoNegro p {
-	text-align: center;
-	color: #fffefe;
-	font-size: 18px;
+/* Estilo y animación del texto */
+.TextoAnimado {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2em;
+  font-weight: bold;
+  opacity: 0;
+  animation: aparecer 3s ease-in-out forwards;
+}
+
+/* Animación personalizada */
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -70%) scale(0.8);
+    letter-spacing: 0.2em;
+  }
+  50% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.1);
+    letter-spacing: 0.1em;
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    letter-spacing: normal;
+  }
 }
 
 /* Hamburgesa */

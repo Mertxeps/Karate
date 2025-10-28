@@ -46,21 +46,6 @@ main img {
   padding-left: 50px; /* espacio entre el icono y el texto */
 }
 
-/* .ListaDeVerificacion li {
-    margin-left: 9%;
-	padding-bottom: 1%;
-	font-size: 18px;
-    list-style-image: url(../Icons/Checks/Miniaturas/Lista\ de\ verificacion\ 55.jpg);
-} */
-
-.FormatoParrafo1 {
-	margin: auto;
-	width: 90%;
-	font-size: 18px;
-	text-align: justify;
-	margin-top: 0%;
-}
-
 h1:last-of-type {
 	margin-bottom: 0;
 }
@@ -152,8 +137,8 @@ img:last-of-type {
     }
 
     .DirMap ul li {
-        display: block;             /* uno debajo del otro */
-        font-size: 18px;            /* un poco más pequeño */
+        display: block; /* uno debajo del otro */
+        font-size: 18px;
         margin-bottom: 8px;
     }
 
@@ -188,9 +173,9 @@ img:last-of-type {
         width: 90%;
         height: 200px;
         display: block;
-        margin: 0 auto;           /* centra horizontalmente el iframe */
+        margin: 0 auto;             /* centra horizontalmente el iframe */
         border-radius: 8px;
-        position: relative;       /* asegúrate de que no se desplace por márgenes heredados */
+        position: relative;         /* asegúra que no se desplace por márgenes heredados */
         left: 40%;
         transform: translateX(-46%); /* centra con precisión */
     }
@@ -198,13 +183,13 @@ img:last-of-type {
     .DirMap ul {
         margin: 0;
         justify-self: center; /* centra la lista en el grid */
-        text-align: center;   /* centra el texto */
+        text-align: center;
     }
 
     .DirMap ul li {
         display: block;
         font-size: 16px;
-        text-align: center;    /* asegura que el texto de cada li se centre */
+        text-align: center;
         margin: 4px 0;
     }
 
