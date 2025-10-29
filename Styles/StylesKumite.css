@@ -36,3 +36,19 @@ main ul li ul li {
 main ul li ul li:first-of-type {
 	padding-top: 1%;
 }
+
+.Comprobado li {
+	margin-left: 9%;
+    font-size: 18px;
+    list-style: none; /* quita el marcador original */
+    background-image: url(../Icons/Checks/Miniaturas/Comprobado\ 55.jpg);
+    background-size: 25px 25px; /* tamaño del icono */
+    background-repeat: no-repeat;
+    background-position: 0 4px; /* ajusta la posición vertical */
+    padding-left: 50px; /* espacio para el icono */
+}
+
+.Comprobado li:first-of-type {
+	margin-bottom: 0%;
+	background-position: 2px;
+}
