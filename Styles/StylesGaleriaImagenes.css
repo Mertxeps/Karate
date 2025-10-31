@@ -1,7 +1,7 @@
 
 /* estilo del contenedor */
 .galeria {
-  width: 650px; /* debemos dar un ancho fijo */
+  width: 650px; /* debemos dar un ancho fijo. ir subiendo de 50 en 50 si queremos añadir más fotos. */
   margin: 20px auto;
   overflow: hidden; /* ocultamos lo que sobresalga de las imágenes del contenedor*/
   box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.08);
