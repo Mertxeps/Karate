@@ -15,45 +15,46 @@ h1 {
 }
 
 .PracticandoPlaya {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 20px;
-	flex-wrap: wrap; /* permite que las imágenes se ajusten si hay poco espacio */
+    display: flex;
+    justify-content:center;
+    justify-items: center;
+    /* height: 550px; */
+}
+
+.PracticandoPlaya:first-of-type {
+    /* height: 550px; */
 }
 
 main img {
-	display: block;
-	margin: 2% auto;
+	display: flex;
+	justify-items: center;
+	margin-top: 2%;
 	border-radius: 10%;
 	width: 500px;
-	max-width: 90%;
 }
 
-/* --- LISTAS --- */
-
 .Comprobar li {
-	margin-left: 9%;
-	padding-bottom: 1%;
-	font-size: 18px;
-	list-style: none;
-	background-image: url(../Icons/Checks/Miniaturas/Comprobar%2050.jpg);
-	background-size: 25px 25px;
-	background-repeat: no-repeat;
-	background-position: 0 4px;
-	padding-left: 50px;
+    margin-left: 9%;
+    padding-bottom: 1%;
+    font-size: 18px;
+    list-style: none; /* quita el marcador original */
+    background-image: url(../Icons/Checks/Miniaturas/Comprobar%2050.jpg);
+    background-size: 25px 25px; /* tamaño del icono */
+    background-repeat: no-repeat;
+    background-position: 0 4px; /* ajusta la posición vertical */
+    padding-left: 50px; /* espacio para el icono */
 }
 
 .ListaDeVerificacion li {
-	margin-left: 9%;
-	padding-bottom: 1%;
-	font-size: 18px;
-	list-style: none;
-	background-image: url(../Icons/Checks/Miniaturas/ListaDeVerificacion55.jpg);
-	background-size: 25px 25px;
-	background-repeat: no-repeat;
-	background-position: 0 4px;
-	padding-left: 50px;
+  margin-left: 9%;
+  padding-bottom: 1%;
+  font-size: 18px;
+  list-style: none; /* quita el marcador por defecto */
+  background-image: url(../Icons/Checks/Miniaturas/ListaDeVerificacion55.jpg);
+  background-size: 25px 25px; /* ajusta el tamaño del icono */
+  background-repeat: no-repeat;
+  background-position: 0 4px; /* posición del icono */
+  padding-left: 50px; /* espacio entre el icono y el texto */
 }
 
 h1:last-of-type {
@@ -70,116 +71,145 @@ img:last-of-type {
 
 /* --- MEDIA QUERIES --- */
 
-/* Pantallas grandes (por defecto, mantiene diseño en fila) */
+/* Solo aplicar este diseño en pantallas grandes */
 @media (min-width: 992px) {
-	.PracticandoPlaya {
-		flex-direction: row;
-		justify-content: center;
-		align-items: center;
-	}
-
-	.PracticandoPlaya img {
-		width: 450px;
-		max-width: 45%;
-		border-radius: 10%;
-	}
+  .DirMap {
+    grid-template-columns: 1fr auto; /* mantiene el diseño a dos columnas */
+  }
 }
 
-/* Tablets */
+/* para portátiles  */
+/* @media (min-width: 1281px) and (max-width: 1440px) {} */
+
+/* Para tables */
 @media screen and (max-width: 768px) {
-	.hamburger {
+    .hamburger {
 		display: block;
 	}
 
-	.menu-container {
-		display: none;
-		flex-direction: column;
-		width: 100%;
-		background: white;
-		position: relative;
-		left: 0;
-		box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-	}
+    /* Ocultamos el menú-container por defecto */
+    .menu-container {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: white;
+        position: relative;
+        left: 0;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
 
-	#menu-toggle:checked + .hamburger + .menu-container {
-		display: flex;
-	}
+    /* Cuando se activa la hamburguesa */
+    #menu-toggle:checked + .hamburger + .menu-container {
+        display: flex;
+    }
 
-	.menu-container .logo {
-		display: flex;
-		justify-content: center;
-		padding: 15px 0;
-	}
-
-	.menu-container .logo img {
+    /* Logo dentro del menú */
+    .menu-container .logo {
+        display: flex;
+        justify-content: center;
+        padding: 15px 0;
+    }
+    .menu-container .logo img {
 		width: 80px;
 		height: 80px;
 	}
 
-	.menu {
-		flex-direction: column;
-		width: 100%;
-	}
-
-	.menu li {
+    /* Menú vertical */
+    .menu {
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+    }
+	
+    .menu li {
 		text-align: center;
 		padding: 10px 0;
 	}
-
-	.menu li a {
+	
+    .menu li a {
 		font-size: 18px;
 	}
 
-    /* Ajuste para las imágenes del main */
-	.PracticandoPlaya {
-		flex-dire
+    .DirMap {
+        grid-template-columns: 1fr; /* pasa a una sola columna */
+        justify-items: center;      /* centra mapa y lista horizontalmente */
+        text-align: center;
     }
 
-    main img:last-of-type,
-    main img:nth-last-of-type(2) {
-        display: block;
-        margin: 20px auto;       /* centra horizontalmente */
-        width: 80%;              /* se adapta al ancho */
-        max-width: 400px;        /* evita que sean demasiado grandes */
-        height: auto;            /* mantiene proporción */
+    .DirMap iframe {
+        max-width: 90%;
+        height: 250px;
+        margin: 20px 0 10px 0;
     }
 
-	.DirMap {
-		grid-template-columns: 1fr;
-		justify-items: center;
-		text-align: center;
-	}
+    .DirMap ul {
+        margin: 0;
+        text-align: center;
+    }
 
-	.DirMap iframe {
-		max-width: 90%;
-		height: 250px;
-		margin: 20px 0 10px 0;
-	}
+    .DirMap ul li {
+        display: block; /* uno debajo del otro */
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
 
-	.DirMap ul {
-		margin: 0;
-		text-align: center;
-	}
-
-	.DirMap ul li {
-		display: block;
-		font-size: 18px;
-		margin-bottom: 8px;
-	}
-
-	.copy {
-		font-size: 20px;
-	}
+    .copy {
+        font-size: 20px;
+    }
 }
 
-/* Móviles */
+/* Para móviles */
 @media screen and (max-width: 480px) {
-    main img:last-of-type,
-    main img:nth-last-of-type(2) {
+    .menu-container .logo img {
+		width: 60px;
+		height: 60px;
+	}
+
+    nav {
+        position: sticky;
+        top: 0;
+    }
+
+    .menu-container {
+        position: relative;
+    }
+
+    .DirMap {
+        grid-template-columns: 1fr;    /* todo en una sola columna */
+        justify-items: center;         /* centra mapa y lista */
+        text-align: center;
+    }
+
+    .DirMap iframe {
+        width: 90%;
+        height: 200px;
         display: block;
-        margin: 15px auto;       /* centradas y con menos margen */
-        width: 90%;              /* ocupa casi todo el ancho */
-        max-width: 350px;
-        height: auto;
+        margin: 0 auto;             /* centra horizontalmente el iframe */
+        border-radius: 8px;
+        position: relative;         /* asegúra que no se desplace por márgenes heredados */
+        left: 40%;
+        transform: translateX(-46%); /* centra con precisión */
+    }
+
+    .DirMap ul {
+        margin: 0;
+        justify-self: center; /* centra la lista en el grid */
+        text-align: center;
+    }
+
+    .DirMap ul li {
+        display: block;
+        font-size: 16px;
+        text-align: center;
+        margin: 4px 0;
+    }
+
+    .copy {
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    .ContenedorFooter {
+        padding: 2%;
     }
 }
