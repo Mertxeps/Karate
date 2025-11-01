@@ -30,3 +30,83 @@ h1 {
 .FormatoParrafo:last-of-type {
 	margin-bottom: 2%;
 }
+
+/* --- MEDIA QUERIES --- */
+
+/* Para tables */
+@media screen and (max-width: 768px) {
+	.FondoNegro img {
+        width: 100%;
+        height: auto;
+    }
+
+    .TextoAnimado {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .FormatoParrafo, .FormatoParrafo1 {
+        width: 95%;
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 22px;
+        margin-left: 3%;
+        text-align: center;
+    }
+
+    .galeria figure img {
+        width: 100%;
+        height: auto;
+    }
+
+    .galeria figcaption span {
+        font-size: 14px;
+    }
+}
+
+/* Para móviles */
+@media screen and (max-width: 480px) {
+	.FondoNegro {
+        padding: 10px 0;
+    }
+
+    .FondoNegro img {
+        width: 100%;
+        height: auto;
+    }
+
+    .TextoAnimado {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .FormatoParrafo, .FormatoParrafo1 {
+        width: 95%;
+        font-size: 14px;
+        text-align: justify;
+        margin-top: 3%;
+    }
+
+    h1 {
+        font-size: 18px;
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .galeria {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .galeria figure {
+        width: 90%;
+        margin-bottom: 15px;
+    }
+
+    .galeria figcaption span {
+        font-size: 12px;
+    }
+}
