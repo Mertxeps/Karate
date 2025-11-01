@@ -85,6 +85,8 @@ img:last-of-type {
 	}
 }
 
+/* --- MEDIA QUERIES --- */
+
 /* Tablets */
 @media screen and (max-width: 768px) {
 	.hamburger {
@@ -147,14 +149,14 @@ img:last-of-type {
 		max-width: 450px;
 	}
 
-    /* main img:last-of-type,
+    main img:last-of-type,
     main img:nth-last-of-type(2) {
         display: block;
         margin: 20px auto;       /* centra horizontalmente */
         width: 80%;              /* se adapta al ancho */
         max-width: 400px;        /* evita que sean demasiado grandes */
         height: auto;            /* mantiene proporción */
-    } */
+    }
 
 	.DirMap {
 		grid-template-columns: 1fr;
@@ -218,14 +220,14 @@ img:last-of-type {
 		max-width: 400px;
 	}
 
-    /* main img:last-of-type,
+    main img:last-of-type,
     main img:nth-last-of-type(2) {
         display: block;
         margin: 15px auto;       /* centradas y con menos margen */
         width: 90%;              /* ocupa casi todo el ancho */
         max-width: 350px;
         height: auto;
-    } */
+    }
 
 	.DirMap {
 		grid-template-columns: 1fr;

@@ -13,3 +13,26 @@
 	text-align: justify;
 	margin-top: 0%;
 }
+
+/* --- MEDIA QUERIES --- */
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+	.FormatoParrafo,
+	.FormatoParrafo1 {
+		width: 95%;             /* Aumenta el ancho para aprovechar mejor el espacio */
+		font-size: 16px;        /* Reduce ligeramente el tamaño de fuente */
+		margin-top: 3%;         /* Da un poco más de aire visual */
+	}
+}
+
+/* Móviles */
+@media screen and (max-width: 480px) {
+	.FormatoParrafo,
+	.FormatoParrafo1 {
+		width: 98%;             /* Ocupa casi todo el ancho de la pantalla */
+		font-size: 14px;        /* Reduce más el tamaño de fuente para pantallas pequeñas */
+		margin-top: 4%;         /* Ajusta el margen para mejor legibilidad */
+		text-align: left;       /* Justificar puede dificultar la lectura en móviles */
+	}
+}
