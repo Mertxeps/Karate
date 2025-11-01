@@ -21,9 +21,9 @@ h1 {
     /* height: 550px; */
 }
 
-.PracticandoPlaya:first-of-type {
+/* .PracticandoPlaya:first-of-type {
     /* height: 550px; */
-}
+} */
 
 main img {
 	display: flex;
@@ -130,6 +130,20 @@ img:last-of-type {
 		font-size: 18px;
 	}
 
+    .PracticandoPlaya {
+        display: flex;
+        flex-direction: column; /* Coloca las imágenes una debajo de otra */
+        align-items: center;    /* Centra las imágenes */
+        gap: 15px;              /* Espacio entre ellas */
+        margin: 20px auto;
+    }
+
+    .PracticandoPlaya img {
+        width: 80%;             /* Reduce un poco el ancho */
+        height: auto;
+        border-radius: 10px;
+    }
+
     .DirMap {
         grid-template-columns: 1fr; /* pasa a una sola columna */
         justify-items: center;      /* centra mapa y lista horizontalmente */
@@ -172,6 +186,20 @@ img:last-of-type {
 
     .menu-container {
         position: relative;
+    }
+
+    .PracticandoPlaya {
+        display: flex;
+        flex-direction: column; /* Mantiene el formato en columna */
+        align-items: center;
+        gap: 10px;              /* Menor separación entre imágenes */
+        margin: 15px auto;
+    }
+
+    .PracticandoPlaya img {
+        width: 95%;             /* Se ajusta casi al ancho completo de la pantalla */
+        height: auto;
+        border-radius: 8px;
     }
 
     .DirMap {
