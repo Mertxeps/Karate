@@ -9,6 +9,76 @@ main img {
 	justify-content: center;
 }
 
-p:last-of-type {
-	margin-bottom: 2%;
+/* --- MEDIA QUERIES --- */
+
+/* Para tables */
+@media screen and (max-width: 768px) {
+    .FondoNegro img {
+        width: 100%;
+        height: auto;
+    }
+
+    .TextoAnimado {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .FormatoParrafo {
+        width: 95%;
+        font-size: 16px;
+        text-align: justify;
+        margin: 2% auto;
+    }
+
+    main img {
+        width: 90%;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+    }
+
+    h1 {
+        font-size: 22px;
+        text-align: center;
+        margin-top: 3%;
+    }
+}
+
+/* Para móviles */
+@media screen and (max-width: 480px) {
+    .FondoNegro {
+        padding: 10px 0;
+    }
+
+    .FondoNegro img {
+        width: 100%;
+        height: auto;
+    }
+
+    .TextoAnimado {
+        font-size: 20px;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .FormatoParrafo {
+        width: 95%;
+        font-size: 14px;
+        text-align: justify;
+        margin: 3% auto;
+        line-height: 1.5;
+    }
+
+    main img {
+        width: 95%;
+        height: auto;
+        display: block;
+        margin: 15px auto;
+    }
+
+    h1 {
+        font-size: 18px;
+        text-align: center;
+        margin: 10px 0;
+    }
 }

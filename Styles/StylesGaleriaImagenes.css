@@ -197,6 +197,9 @@ html, input {
   font-family: sans-serif;
 } */
 
+/* --- MEDIA QUERIES --- */
+
+/* Para tables */
 @media screen and (max-width: 768px) {
   .galeria {
     width: 90%;
@@ -235,6 +238,7 @@ html, input {
   }
 }
 
+/* Para móviles */
 @media screen and (max-width: 480px) {
   .galeria {
     width: 100%;
