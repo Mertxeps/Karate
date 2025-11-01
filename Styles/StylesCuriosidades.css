@@ -30,3 +30,78 @@ h1 {
 .FormatoParrafo:last-of-type {
 	margin-bottom: 2%;
 }
+
+/* --- MEDIA QUERIES --- */
+
+/* Para tables */
+@media screen and (max-width: 768px) {
+	/* Imagen de la katana */
+    #Katana {
+        width: 60%;          /* Más ancho en pantallas medianas */
+        margin-top: 3%;
+        border-radius: 8%;
+    }
+
+    /* Galería de imágenes */
+    .ImagenesCuriosidades {
+        flex-direction: row;
+        justify-content: center;
+        gap: 3%;
+        width: 95%;
+    }
+
+    .ImagenesCuriosidades img {
+        width: 45%;          /* Dos imágenes por fila */
+        border-radius: 8px;
+        margin-bottom: 3%;
+    }
+
+    h1 {
+        font-size: 22px;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .FormatoParrafo,
+    .FormatoParrafo1 {
+        width: 95%;
+        font-size: 16px;
+        margin-top: 3%;
+    }
+}
+
+/* Para móviles */
+@media screen and (max-width: 480px) {
+	#Katana {
+        width: 80%;          /* Centrada y más grande */
+        margin-top: 4%;
+        border-radius: 10%;
+    }
+
+    .ImagenesCuriosidades {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .ImagenesCuriosidades img {
+        width: 90%;          /* Ocupa casi todo el ancho */
+        border-radius: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+        margin-left: 0;
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    .FormatoParrafo,
+    .FormatoParrafo1 {
+        width: 95%;
+        font-size: 14px;
+        text-align: left;    /* Más legible en pantallas pequeñas */
+        margin-top: 4%;
+    }
+}
