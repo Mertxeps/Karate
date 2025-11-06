@@ -144,59 +144,6 @@ figure {
   margin: 0;
 }
 
-/* @media screen and (min-width:521px) and (max-width: 720px) {
-  .galeria {
-    width: 540px;
-  }
-
-  .galeria figure {
-    left: 40px;
-    width: 260px;
-  }
-
-  .galeria input {
-    width: 40px;
-  }
-
-  .galeria input:checked ~ figure {
-    left: 260px;
-  }
-
-  .galeria figcaption span {
-    font-size: 16px;
-  }
-} 
-
-@media screen and (max-width: 520px) {
-  .galeria {
-    width: 320px;
-  }
-
-  .galeria figure {
-    left: 20px;
-    width: 180px;
-  }
-
-  .galeria input {
-    width: 20px;
-  }
-
-  .galeria input:checked ~ figure {
-    left: 180px;
-  }
-
-  .galeria figcaption span {
-    font-size: 12px;
-    letter-spacing: 2px;
-    padding: 10px;
-    margin-top: -20px;
-  }
-}
-
-html, input {
-  font-family: sans-serif;
-} */
-
 /* --- MEDIA QUERIES --- */
 
 /* Para tables */
@@ -243,8 +190,19 @@ html, input {
   .galeria {
     width: 100%;
     margin: 10px auto;
-    border: 3px solid rgba(189, 188, 188, 0.5);
-    box-shadow: none;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    /* border: 3px solid rgba(189, 188, 188, 0.5);
+    box-shadow: none; */
+  }
+
+  .galeria figure img {
+    background: rgb(255, 255, 255);
+    padding-top: 5%;
+  }
+
+  .galeria figure:first-child {
+    margin-top: 0;
   }
 
   .galeria figure {
