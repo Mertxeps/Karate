@@ -61,13 +61,6 @@ h1 {
         text-align: center;
         margin-left: 0;
     }
-
-    .FormatoParrafo,
-    .FormatoParrafo1 {
-        width: 95%;
-        font-size: 16px;
-        margin-top: 3%;
-    }
 }
 
 /* Para móviles */
@@ -86,7 +79,7 @@ h1 {
     }
 
     .ImagenesCuriosidades img {
-        width: 90%;          /* Ocupa casi todo el ancho */
+        width: 90%;
         border-radius: 10px;
     }
 
@@ -95,13 +88,5 @@ h1 {
         margin-left: 0;
         text-align: center;
         margin-top: 5%;
-    }
-
-    .FormatoParrafo,
-    .FormatoParrafo1 {
-        width: 95%;
-        font-size: 14px;
-        text-align: left;    /* Más legible en pantallas pequeñas */
-        margin-top: 4%;
     }
 }
