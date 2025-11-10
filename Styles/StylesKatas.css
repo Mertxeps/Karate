@@ -158,6 +158,11 @@ img:last-of-type {
         height: auto;            /* mantiene proporción */
     }
 
+	.Comprobar li,
+	.ListaDeVerificacion li {
+		text-align: justify;
+	}
+
 	.DirMap {
 		grid-template-columns: 1fr;
 		justify-items: center;
@@ -228,6 +233,11 @@ img:last-of-type {
         max-width: 350px;
         height: auto;
     }
+
+	.Comprobar li,
+	.ListaDeVerificacion li {
+		text-align: justify;
+	}
 
 	.DirMap {
 		grid-template-columns: 1fr;

@@ -282,13 +282,13 @@ body {
   .DirMap ul {
     margin: 0;
     justify-self: center; /* centra la lista en el grid */
-    text-align: center;   /* centra el texto */
+    text-align: center;
   }
 
   .DirMap ul li {
     display: block;
     font-size: 16px;
-    text-align: center;    /* asegura que el texto de cada li se centre */
+    text-align: center;
     margin: 4px 0;
   }
 
