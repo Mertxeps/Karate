@@ -107,7 +107,7 @@ main ul li ul li:first-of-type {
     }
 
     .ImagenesKumite img {
-        width: 90%;        /* Ocupa casi todo el ancho del móvil */
+        width: 90%;
         border-radius: 10px;
     }
 

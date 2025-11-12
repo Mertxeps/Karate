@@ -85,8 +85,6 @@ img:last-of-type {
 	}
 }
 
-/* --- MEDIA QUERIES --- */
-
 /* Tablets */
 @media screen and (max-width: 768px) {
 	.hamburger {
@@ -224,7 +222,7 @@ img:last-of-type {
     main img:nth-last-of-type(2) {
         display: block;
         margin: 15px auto;       /* centradas y con menos margen */
-        width: 90%;              /* ocupa casi todo el ancho */
+        width: 90%;
         max-width: 350px;
         height: auto;
     }

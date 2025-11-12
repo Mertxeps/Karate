@@ -68,7 +68,7 @@ body {
 .FondoNegro img {
   width: 50%;
   margin: auto;
-  display: block; /* para centrar correctamente */
+  display: block; /* Centrar correctamente */
 }
 
 /* Estilo y animación del texto */
@@ -163,6 +163,10 @@ body {
 
 /* Solo aplicar este diseño en pantallas grandes */
 @media (min-width: 992px) {
+  .FondoNegro img {
+    width: 100%;
+  }
+
   .DirMap {
     grid-template-columns: 1fr auto; /* mantiene el diseño a dos columnas */
   }
@@ -217,6 +221,10 @@ body {
   .menu li a {
     font-size: 18px;
   }
+  
+  .FondoNegro img {
+    width: 100%;
+  }
 
   .DirMap {
     grid-template-columns: 1fr; /* pasa a una sola columna */
@@ -236,8 +244,8 @@ body {
   }
 
   .DirMap ul li {
-    display: block;             /* uno debajo del otro */
-    font-size: 18px;            /* un poco más pequeño */
+    display: block;     /* uno debajo del otro */
+    font-size: 18px;
     margin-bottom: 8px;
   }
 
@@ -272,9 +280,9 @@ body {
     width: 90%;
     height: 200px;
     display: block;
-    margin: 0 auto;           /* centra horizontalmente el iframe */
+    margin: 0 auto;              /* centra horizontalmente el iframe */
     border-radius: 8px;
-    position: relative;       /* asegura que no se desplace por márgenes heredados */
+    position: relative;          /* asegura que no se desplace por márgenes heredados */
     left: 40%;
     transform: translateX(-46%); /* centra con precisión */
   }
